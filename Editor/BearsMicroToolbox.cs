@@ -197,7 +197,7 @@ namespace Bears
             }
         }
 
-        [MenuItem("Tools/Krillbite/Selection/Siblings With Same Name %&Z")]
+        [MenuItem("Tools/Selection/Siblings With Same Name %&Z")]
         public static void SelectSiblingsWithSameName()
         {
             List<Object> newSelection = new List<Object>();
@@ -231,7 +231,7 @@ namespace Bears
             Selection.objects = newSelection.ToArray();
         }
 
-        [MenuItem("Tools/Krillbite/Selection/Select Parent &C")]
+        [MenuItem("Tools/Selection/Select Parent &C")]
         public static void SelectParent()
         {
             List<Object> newSelection = new List<Object>();
@@ -252,7 +252,7 @@ namespace Bears
             Selection.objects = newSelection.ToArray();
         }
 
-        [MenuItem("Tools/Krillbite/Selection/Select Siblings &z")]
+        [MenuItem("Tools/Selection/Select Siblings &z")]
         public static void SelectSiblingsFromSelected()
         {
             List<Object> newSelection = new List<Object>();
@@ -286,7 +286,7 @@ namespace Bears
             Selection.objects = newSelection.ToArray();
         }
 
-        [MenuItem("Tools/Krillbite/Selection/Enable/Disable Selection %g")]
+        [MenuItem("Tools/Selection/Enable/Disable Selection %g")]
         public static void ToggleSelectionEnabled()
         {
             foreach (GameObject go in Selection.gameObjects)
@@ -353,4 +353,5 @@ namespace Bears
             EditorGUILayout.EndHorizontal();
         }
     }
+
 }
